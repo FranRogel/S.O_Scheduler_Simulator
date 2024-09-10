@@ -1,0 +1,42 @@
+[
+    {
+        "name": "P1",
+        "arrival_time": 0,
+        "cpu_bursts": 2,
+        "burst_duration": 7,
+        "io_duration": 2,
+        "priority": 2
+    },
+    {
+        "name": "P2",
+        "arrival_time": 0,
+        "cpu_bursts": 1.5,
+        "burst_duration": 4,
+        "io_duration": 1,
+        "priority": 1
+    },
+    {
+        "name": "P3",
+        "arrival_time": 4,
+        "cpu_bursts": 3,
+        "burst_duration": 5,
+        "io_duration": 0,
+        "priority": 1
+    },
+    {
+        "name": "P4",
+        "arrival_time": 6,
+        "cpu_bursts": 2,
+        "burst_duration": 3,
+        "io_duration": 4,
+        "priority": 3
+    },
+    {
+        "name": "P5",
+        "arrival_time": 8,
+        "cpu_bursts": 3,
+        "burst_duration": 2,
+        "io_duration": 2,
+        "priority": 2
+    }
+]
