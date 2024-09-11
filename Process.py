@@ -1,3 +1,5 @@
+import copy
+
 class Process:
     def __init__(self, name, arrival_time, cpu_bursts, burst_duration, io_duration, priority):
         self.name = name
@@ -9,8 +11,17 @@ class Process:
         self.remaining_time = cpu_bursts * burst_duration #Tiempo que le queda al proceso para terminarseo
         self.waiting_time = 0 #Tiempo que estuvo el proceso en estado de espera
         self.burst_remaining = burst_duration #Tiempo que le queda a su burst
+        self.burst_history = []
+        self.ready_time = 0 #Tiempo del proceso que estuvo en el estado de listo
         self.turnaround_time = 0 #Tiempo de Retorno
         self.normalized_turnaround_time = 0 #Tiempo de Retorno normalizado
     
     def __str__(self):
         return f"Process(name={self.name})"
+
+    def add_burst(self,burst):
+        self.burst_history.append(burst)
+
+    def clone(self):
+        # Usa copy.deepcopy para clonar completamente el proceso
+        return copy.deepcopy(self)

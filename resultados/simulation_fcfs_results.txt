@@ -11,97 +11,98 @@ Time 4: Process P1 running. 2 ms left.
 Time 5: Process P1 running. 1 ms left.
 Time 6: Process P4 added to ready queue.
 Time 6: Process P1 running. 0 ms left.
-Time 7: Process P1 moved to waiting queue (I/O).
-Time 7: Process P2 dispatched to running.
-Time 7: Process P2 started execution after TIP.
-Time 7: Process P2 running. 3 ms left.
+Time 7: Process P1 started moved to waiting queue (I/O) 0.
+Time 8: Process P1 moved to waiting queue (I/O).
 Time 8: Process P5 added to ready queue.
-Time 8: Process P2 running. 2 ms left.
-Time 9: Process P1 added back to ready queue.
-Time 9: Process P2 running. 1 ms left.
-Time 10: Process P2 running. 0 ms left.
-Time 11: Process P2 moved to waiting queue (I/O).
-Time 11: Process P3 dispatched to running.
-Time 11: Process P3 started execution after TIP.
-Time 11: Process P3 running. 4 ms left.
-Time 12: Process P2 added back to ready queue.
-Time 12: Process P3 running. 3 ms left.
-Time 13: Process P3 running. 2 ms left.
-Time 14: Process P3 running. 1 ms left.
-Time 15: Process P3 running. 0 ms left.
-Time 16: Process P3 moved to waiting queue (I/O).
-Time 16: Process P3 added back to ready queue.
-Time 16: Process P4 dispatched to running.
-Time 16: Process P4 started execution after TIP.
-Time 16: Process P4 running. 2 ms left.
-Time 17: Process P4 running. 1 ms left.
-Time 18: Process P4 running. 0 ms left.
-Time 19: Process P4 moved to waiting queue (I/O).
-Time 19: Process P5 dispatched to running.
-Time 19: Process P5 started execution after TIP.
-Time 19: Process P5 running. 1 ms left.
-Time 20: Process P5 running. 0 ms left.
-Time 21: Process P5 moved to waiting queue (I/O).
-Time 21: Process P1 dispatched to running.
-Time 21: Process P1 started execution after TIP.
-Time 21: Process P1 running. 6 ms left.
-Time 22: Process P1 running. 5 ms left.
-Time 23: Process P4 added back to ready queue.
-Time 23: Process P5 added back to ready queue.
-Time 23: Process P1 running. 4 ms left.
-Time 24: Process P1 running. 3 ms left.
-Time 25: Process P1 running. 2 ms left.
-Time 26: Process P1 running. 1 ms left.
-Time 27: Process P1 running. 0 ms left.
-Time 28: Process P1 completed.
-Time 28: Process P2 dispatched to running.
-Time 29: Process P2 moved to waiting queue (I/O).
-Time 29: Process P3 dispatched to running.
-Time 29: Process P3 started execution after TIP.
-Time 29: Process P3 running. 4 ms left.
-Time 30: Process P2 added back to ready queue.
-Time 30: Process P3 running. 3 ms left.
-Time 31: Process P3 running. 2 ms left.
-Time 32: Process P3 running. 1 ms left.
-Time 33: Process P3 running. 0 ms left.
-Time 34: Process P3 moved to waiting queue (I/O).
-Time 34: Process P3 added back to ready queue.
-Time 34: Process P4 dispatched to running.
-Time 34: Process P4 started execution after TIP.
-Time 34: Process P4 running. 2 ms left.
-Time 35: Process P4 running. 1 ms left.
-Time 36: Process P4 running. 0 ms left.
-Time 37: Process P4 completed.
-Time 37: Process P5 dispatched to running.
-Time 38: Process P5 moved to waiting queue (I/O).
-Time 38: Process P2 dispatched to running.
-Time 38: Process P2 started execution after TIP.
-Time 38: Process P2 running. 3 ms left.
-Time 39: Process P2 running. 2 ms left.
-Time 40: Process P2 completed.
-Time 40: Process P5 added back to ready queue.
-Time 40: Process P3 dispatched to running.
-Time 41: Process P3 moved to waiting queue (I/O).
-Time 41: Process P3 added back to ready queue.
-Time 41: Process P5 dispatched to running.
-Time 41: Process P5 started execution after TIP.
-Time 41: Process P5 running. 1 ms left.
-Time 42: Process P5 running. 0 ms left.
-Time 43: Process P5 moved to waiting queue (I/O).
-Time 43: Process P3 dispatched to running.
-Time 43: Process P3 started execution after TIP.
-Time 43: Process P3 running. 4 ms left.
-Time 44: Process P3 running. 3 ms left.
-Time 45: Process P5 added back to ready queue.
-Time 45: Process P3 running. 2 ms left.
-Time 46: Process P3 running. 1 ms left.
-Time 47: Process P3 running. 0 ms left.
-Time 48: Process P3 completed.
-Time 48: Process P5 dispatched to running.
-Time 49: Process P5 moved to waiting queue (I/O).
-Time 51: Process P5 added back to ready queue.
-Time 51: Process P5 dispatched to running.
-Time 51: Process P5 started execution after TIP.
-Time 51: Process P5 running. 1 ms left.
-Time 52: Process P5 running. 0 ms left.
-Time 53: Process P5 completed.
+Time 8: Process P2 dispatched to running.
+Time 8: Process P2 started execution after TIP.
+Time 8: Process P2 running. 3 ms left.
+Time 9: Process P2 running. 2 ms left.
+Time 10: Process P1 added back to ready queue.
+Time 10: Process P2 running. 1 ms left.
+Time 11: Process P2 running. 0 ms left.
+Time 12: Process P2 started moved to waiting queue (I/O) 0.
+Time 13: Process P2 moved to waiting queue (I/O).
+Time 13: Process P3 dispatched to running.
+Time 13: Process P3 started execution after TIP.
+Time 13: Process P3 running. 4 ms left.
+Time 14: Process P2 added back to ready queue.
+Time 14: Process P3 running. 3 ms left.
+Time 15: Process P3 running. 2 ms left.
+Time 16: Process P3 running. 1 ms left.
+Time 17: Process P3 running. 0 ms left.
+Time 18: Process P3 started moved to waiting queue (I/O) 0.
+Time 19: Process P3 moved to waiting queue (I/O).
+Time 19: Process P4 dispatched to running.
+Time 19: Process P4 started execution after TIP.
+Time 19: Process P4 running. 2 ms left.
+Time 20: Process P3 added back to ready queue.
+Time 20: Process P4 running. 1 ms left.
+Time 21: Process P4 running. 0 ms left.
+Time 22: Process P4 started moved to waiting queue (I/O) 0.
+Time 23: Process P4 moved to waiting queue (I/O).
+Time 23: Process P5 dispatched to running.
+Time 23: Process P5 started execution after TIP.
+Time 23: Process P5 running. 1 ms left.
+Time 24: Process P5 running. 0 ms left.
+Time 25: Process P5 started moved to waiting queue (I/O) 0.
+Time 26: Process P5 moved to waiting queue (I/O).
+Time 26: Process P1 dispatched to running.
+Time 26: Process P1 started execution after TIP.
+Time 26: Process P1 running. 6 ms left.
+Time 27: Process P4 added back to ready queue.
+Time 27: Process P1 running. 5 ms left.
+Time 28: Process P5 added back to ready queue.
+Time 28: Process P1 running. 4 ms left.
+Time 29: Process P1 running. 3 ms left.
+Time 30: Process P1 running. 2 ms left.
+Time 31: Process P1 running. 1 ms left.
+Time 32: Process P1 running. 0 ms left.
+Time 33: Process P1 started finish 1.
+Time 34: Process P1 completed.
+Time 34: Process P2 dispatched to running.
+Time 34: Process P2 started execution after TIP.
+Time 34: Process P2 running. 3 ms left.
+Time 35: Process P2 running. 2 ms left.
+Time 36: Process P2 started finish 1.
+Time 36: Process P2 running. 1 ms left.
+Time 37: Process P2 completed.
+Time 37: Process P3 dispatched to running.
+Time 37: Process P3 started execution after TIP.
+Time 37: Process P3 running. 4 ms left.
+Time 38: Process P3 running. 3 ms left.
+Time 39: Process P3 running. 2 ms left.
+Time 40: Process P3 running. 1 ms left.
+Time 41: Process P3 running. 0 ms left.
+Time 42: Process P3 started moved to waiting queue (I/O) 0.
+Time 43: Process P3 moved to waiting queue (I/O).
+Time 43: Process P4 dispatched to running.
+Time 43: Process P4 started execution after TIP.
+Time 43: Process P4 running. 2 ms left.
+Time 44: Process P3 added back to ready queue.
+Time 44: Process P4 running. 1 ms left.
+Time 45: Process P4 running. 0 ms left.
+Time 46: Process P4 started finish 1.
+Time 47: Process P4 completed.
+Time 47: Process P5 dispatched to running.
+Time 47: Process P5 started execution after TIP.
+Time 47: Process P5 running. 1 ms left.
+Time 48: Process P5 running. 0 ms left.
+Time 49: Process P5 started moved to waiting queue (I/O) 0.
+Time 50: Process P5 moved to waiting queue (I/O).
+Time 50: Process P3 dispatched to running.
+Time 50: Process P3 started execution after TIP.
+Time 50: Process P3 running. 4 ms left.
+Time 51: Process P3 running. 3 ms left.
+Time 52: Process P5 added back to ready queue.
+Time 52: Process P3 running. 2 ms left.
+Time 53: Process P3 running. 1 ms left.
+Time 54: Process P3 running. 0 ms left.
+Time 55: Process P3 started finish 1.
+Time 56: Process P3 completed.
+Time 56: Process P5 dispatched to running.
+Time 56: Process P5 started execution after TIP.
+Time 56: Process P5 running. 1 ms left.
+Time 57: Process P5 running. 0 ms left.
+Time 58: Process P5 started finish 1.
+Time 59: Process P5 completed.
