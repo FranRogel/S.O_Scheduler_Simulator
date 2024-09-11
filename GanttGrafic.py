@@ -25,8 +25,11 @@ class Burstline():
         else:
             return self.tcp_time - self.start
 
-def plot_gantt_chart(processes, finish):
+def plot_gantt_chart(processes, finish, graph_window=None):
     fig, (gnt, info) = plt.subplots(2, 1, figsize=(12, 8), gridspec_kw={'height_ratios': [3, 1]})
+
+    if graph_window:
+        plt.close(graph_window)
     
     # Ajustes básicos del gráfico de Gantt
     gnt.set_xlabel('Tiempo')
@@ -92,6 +95,7 @@ def plot_gantt_chart(processes, finish):
 
     plt.subplots_adjust(hspace=0.4)  # Ajustar espacio entre los gráficos
     plt.show()
+    return fig
 
 
 

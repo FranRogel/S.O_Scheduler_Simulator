@@ -36,7 +36,7 @@ class DispatcherSimulatorApp:
         # Crear los elementos de la interfaz
         self.create_widgets()
         # Inicializar ventanas
-        self.graph_window = None 
+        self.graph_window = None
         self.events_window = None
 
     def create_widgets(self):
@@ -83,8 +83,8 @@ class DispatcherSimulatorApp:
 
     def simulate(self):
         # Si ya hay una ventana de gráfico abierta, cerrarla
-        if self.graph_window:
-            self.graph_window.destroy()
+        if self.events_window:
+            self.events_window.destroy()
 
         # Obtener los parámetros ingresados
         scheduler_type = self.scheduler_type.get()
@@ -115,16 +115,9 @@ class DispatcherSimulatorApp:
     
         # Hacer que el widget sea de solo lectura
         self.events_text.config(state=tk.DISABLED)
-    
-        # Crear una nueva ventana para el gráfico de Gantt
-        self.graph_window = tk.Toplevel(self.root)
-        self.graph_window.title("Resultados de la Simulación")
 
         processes = scheduler.finish_queu
         limit = scheduler.current_time
-        # Crear una nueva ventana para el gráfico de Gantt
-        self.graph_window = tk.Toplevel(self.root)
-        self.graph_window.title("Resultados de la Simulación")
 
         # Mostrar el gráfico en la ventana
         plot_gantt_chart(processes, limit)
