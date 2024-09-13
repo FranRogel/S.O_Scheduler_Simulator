@@ -12,13 +12,13 @@ class RoundRobin(Scheduler):
     
     def run(self):
     # Mantener un registro de los eventos (simulación de un logger básico)
-
+        quantum_process = 0
         while self.processes or self.ready_queue or self.waiting_queue or self.process_running:     
             # 1. Verificar si el proceso en running puede terminar (De Running a Terminado)        
             if self.process_running and self.current_process.remaining_time <= 0:
                 self.Simulate_running_to_finish()
             # 2. Verificar si el proceso en running tiene que bloquearse (De Running a Bloqueado)
-            elif self.process_running and self.current_process.remaining_time > 0 and self.burst_time == 0:
+            elif self.process_running and self.current_process.remaining_time > 0 and self.burst_time == 0 and self.taken_cpu:
                 self.Simulate_running_to_blocked()
             # 3. Verificar si el proceso en running pierde el procesador (De Running a Listo)
             elif self.process_running and quantum_process == self.quantum:
@@ -46,11 +46,11 @@ class RoundRobin(Scheduler):
 
             # Simulación del TIP (Tiempo de Inicialización)
             if self.process_running and self.init_time < self.tip:
+                quantum_process = 0
                 self.Simulate_TIP()
 
             # Si se completó el TIP, comienza la ejecución de la ráfaga de CPU
-            if self.process_running and self.init_time == self.tip and not(self.taken_cpu):
-                quantum_process = 0
+            if self.process_running and self.init_time == self.tip and not(self.taken_cpu):    
                 self.Simulate_end_TIP()
 
             # Simulación de ejecución del proceso

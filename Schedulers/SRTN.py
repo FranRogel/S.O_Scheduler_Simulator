@@ -38,7 +38,7 @@ class SRTN(Scheduler):
             if self.process_running and self.current_process.remaining_time <= 0:
                 self.Simulate_running_to_finish()
             # 2. Verificar si el proceso en running tiene que bloquearse (De Running a Bloqueado)
-            elif self.process_running and self.current_process.remaining_time > 0 and self.burst_time == 0:
+            elif self.process_running and self.current_process.remaining_time > 0 and self.burst_time == 0 and self.taken_cpu:
                     self.Simulate_running_to_blocked()
             # 3. Verificar si el proceso en running pierde el procesador (De Running a Listo)
             elif self.process_running and self.ready_queue and self.next_process_short_burst_remaining():
