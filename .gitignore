@@ -1,0 +1,8 @@
+# Ignorar carpetas generadas por PyInstaller
+/build/
+/dist/
+
+# Ignorar archivo UI.spec
+UI.spec
+
+# Puedes agregar más archivos o carpetas si es necesari

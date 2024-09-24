@@ -32,4 +32,3 @@ exe = EXE(
     console=False,
     cipher=block_cipher,
 )
-
