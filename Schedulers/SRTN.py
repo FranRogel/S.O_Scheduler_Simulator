@@ -33,3 +33,20 @@ class SRTN(Scheduler):
         else:
             self.switch_time += 1  # Simular el TCP (Tiempo de conmutación)
 
+    def Simulate_running_to_ready(self):
+        event = f"Time {self.current_time}: Process {self.current_process.name}: lost the processor because a process with lower burst appeared."
+        print(event)  # Imprimir el evento antes de agregarlo
+        self.events.append(event)
+        self.process_running = False 
+        self.taken_cpu = False
+        self.current_process.burst_remaining = self.burst_time
+        self.current_burst.finish = self.current_time
+        self.current_process.add_burst(self.current_burst)
+        self.add_to_ready_queue(self.current_process)
+
+    def Simulate_end_TIP(self):
+        super().Simulate_end_TIP()
+        self.burst_time = self.current_process.burst_remaining
+
+
+

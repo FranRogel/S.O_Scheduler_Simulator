@@ -1,23 +1,23 @@
 [
     {
         "name": "P1",
-        "arrival_time": 1,
-        "cpu_bursts": 3,
-        "burst_duration": 7,
+        "arrival_time": 0,
+        "cpu_bursts": 2,
+        "burst_duration": 10,
         "io_duration": 5,
         "priority": 2
     },
     {
         "name": "P2",
-        "arrival_time": 0,
-        "cpu_bursts": 1.5,
-        "burst_duration": 4,
+        "arrival_time": 4,
+        "cpu_bursts": 6,
+        "burst_duration": 3,
         "io_duration": 2,
         "priority": 1
     },
     {
         "name": "P3",
-        "arrival_time": 4,
+        "arrival_time": 8,
         "cpu_bursts": 3,
         "burst_duration": 5,
         "io_duration": 1,
@@ -25,15 +25,15 @@
     },
     {
         "name": "P4",
-        "arrival_time": 6,
+        "arrival_time": 10,
         "cpu_bursts": 2,
-        "burst_duration": 3,
+        "burst_duration": 15,
         "io_duration": 4,
         "priority": 3
     },
     {
         "name": "P5",
-        "arrival_time": 8,
+        "arrival_time": 12,
         "cpu_bursts": 3,
         "burst_duration": 2,
         "io_duration": 2,
