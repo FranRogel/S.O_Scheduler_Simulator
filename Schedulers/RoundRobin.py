@@ -12,7 +12,7 @@ class RoundRobin(Scheduler):
         return process  
     
     def preemptive(self):
-        return self.process_running and self.quantum_process == self.quantum
+        return self.process_running and self.quantum_process == self.quantum and not(self.current_process.remaining_time <= 0)
 
     def Simulate_running_to_ready(self):
         event = f"Time {self.current_time}: Process {self.current_process.name} expired his Quantum and moved to ready queue."

@@ -22,7 +22,7 @@ class Scheduler:
         self.burst_time = None
         self.switch_time = 0
         self.finish_time = 0
-        self.init_time = 0  
+        self.init_time = -1  
         self.taken_cpu = False
 
     def add_to_new_queue(self,process):
@@ -123,7 +123,7 @@ class Scheduler:
     def Simulate_ready_to_running(self):
         self.current_process = self.select_next_process()
         self.process_running = True
-        self.init_time = 0  # Reiniciar el contador de TIP (Tiempo de Inicialización)
+        self.init_time = -1  # Reiniciar el contador de TIP (Tiempo de Inicialización)
         event = f"Time {self.current_time}: Process {self.current_process.name} dispatched to running."
         print(event)  # Imprimir el evento antes de agregarlo
         self.events.append(event)
@@ -139,7 +139,7 @@ class Scheduler:
         # Simulación del TIP (Tiempo de Inicialización)
         self.init_time += 1  # Incrementar el tiempo de inicialización
         self.Update_so_time()
-        event = f"Time {self.current_time}: Process {self.current_process.name} initialization TIP in progress ({self.init_time}/{self.tip})."
+        event = f"Time {self.current_time}: Process {self.current_process.name} initialization TIP in progress ({self.init_time}/{int(self.tip)})."
         print(event)  # Imprimir el evento antes de agregarlo
         self.events.append(event)
 
@@ -195,7 +195,7 @@ class Scheduler:
                 self.Simulate_end_TIP()
 
             # Simulación de ejecución del proceso
-            if self.taken_cpu and self.process_running and self.burst_time > 0 and self.init_time == self.tip:
+            if self.taken_cpu and self.process_running and not(self.current_process.remaining_time <= 0) and self.burst_time > 0 and self.init_time == self.tip:
                 self.Simulate_burst()
 
             #Comprobar si la cpu esta inutil

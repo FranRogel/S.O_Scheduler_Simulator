@@ -14,7 +14,7 @@ class SRTN(Scheduler):
         return process.burst_remaining < self.burst_time
 
     def preemptive(self):
-        return self.process_running and self.ready_queue and self.next_process_short_burst_remaining()
+        return self.process_running and self.ready_queue and self.next_process_short_burst_remaining() and not(self.current_process.remaining_time <= 0) and not(self.burst_time == 0)
     
     def Simulate_running_to_blocked(self):
         if self.switch_time == self.tcp:
